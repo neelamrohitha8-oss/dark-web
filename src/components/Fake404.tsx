@@ -21,16 +21,11 @@ export default function Fake404({ enteredPhrase, onBellClick }: Fake404Props) {
     `WARNING: Connection traced from Node.js (Express server v4.21.2)`,
     `Executing honey-pot disguise framework on layer 4...`,
     `Scanning payload credentials submitted: "${enteredPhrase}"`,
-    `TRAVERSAL CHECKSUM CODE MATCH DETERMINATION: ${
-      enteredPhrase === 'THE_BELL_OPENS_THE_GATE' ? 'SUCCESS [DEB_KEY_VALID_0xFFFF]' : 'FAILED [BAD_HASH_CODE]'
-    }`,
+    `TRAVERSAL CHECKSUM CODE MATCH DETERMINATION: AUDITED`,
     `----------------------------------------`,
     `[DISGUISE SYSTEM ACTIVE]`,
     `Masking system footprints... Rendering default 404 response.`,
     `Failsafe trigger monitoring: ACTIVE`,
-    `SYSTEM ADVISORY: Input code verified matching decryption vectors.`,
-    `SECTOR CLUE: "THE BELL OPENS THE GATE".`,
-    `COGNITIVE INSTRUCTION: Click the glowing acoustic emitter node above.`,
     `Awaiting bypass click sequence...`
   ];
 
@@ -47,6 +42,17 @@ export default function Fake404({ enteredPhrase, onBellClick }: Fake404Props) {
   useEffect(() => {
     terminalBottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [terminalLogs]);
+
+  const handleBellClick = () => {
+    if (enteredPhrase === 'THE_BELL_OPENS_THE_GATE') {
+      onBellClick();
+    } else {
+      setTerminalLogs((prev) => [
+        ...prev,
+        `WARNING: Traversal unauthorized. Secure envelope remains sealed.`
+      ]);
+    }
+  };
 
   return (
     <div id="fake-404-container" className="min-h-screen bg-[#050505] text-red-500 font-mono flex flex-col md:flex-row items-stretch overflow-hidden relative selection:bg-red-500 selection:text-black">
@@ -89,33 +95,23 @@ export default function Fake404({ enteredPhrase, onBellClick }: Fake404Props) {
           <div className="mt-8 flex flex-col items-center">
             {/* The glowing bypass Bell icon! */}
             <p className="text-[10px] text-red-500 uppercase tracking-widest mb-3 animate-[pulse_2s_infinite] font-black">
-              {enteredPhrase === 'THE_BELL_OPENS_THE_GATE' 
-                ? "DECRYPTOR READY" 
-                : "CONNECTION STUCK IN 404 HONEYPOT"}
+              CONNECTION STUCK IN 404 HONEYPOT
             </p>
 
             <motion.button
               whileHover={{ scale: 1.12, boxShadow: '0 0 35px rgba(220, 38, 38, 0.4)' }}
               whileTap={{ scale: 0.9 }}
-              onClick={onBellClick}
+              onClick={handleBellClick}
               id="glowing-bell-bypass-trigger"
-              className={`p-6 rounded-full border border-red-500/50 cursor-pointer text-red-500 animate-[pulse_2.5s_infinite] transition-colors relative ${
-                enteredPhrase === 'THE_BELL_OPENS_THE_GATE' 
-                  ? 'bg-red-600/20 shadow-[0_0_20px_rgba(239,68,68,0.3)]' 
-                  : 'bg-red-500/5 text-red-800 border-red-950/55 hover:bg-red-500/10 hover:text-red-500'
-              }`}
+              className="p-6 rounded-full border border-red-500/50 cursor-pointer text-red-500 animate-[pulse_2.5s_infinite] transition-colors relative bg-red-600/20 shadow-[0_0_20px_rgba(239,68,68,0.2)]"
             >
               {/* Ripple Ring Effect */}
-              {enteredPhrase === 'THE_BELL_OPENS_THE_GATE' && (
-                <span className="absolute -inset-1 rounded-full border-2 border-red-600/30 animate-ping" />
-              )}
-              <Bell size={36} className={`${enteredPhrase === 'THE_BELL_OPENS_THE_GATE' ? 'animate-bounce' : ''}`} />
+              <span className="absolute -inset-1 rounded-full border-2 border-red-600/30 animate-ping" />
+              <Bell size={36} className="animate-bounce" />
             </motion.button>
 
             <span className="text-[11px] text-red-600 hover:text-red-500 cursor-pointer mt-4 transition select-none tracking-wide font-bold">
-              {enteredPhrase === 'THE_BELL_OPENS_THE_GATE' 
-                ? "🔑 Bypass Key Loaded." 
-                : "💡 Check operational rules to uncover bypass key."}
+              🔒 SECURE ENVELOPE PROTOCOLS RUNNING.
             </span>
           </div>
         </div>

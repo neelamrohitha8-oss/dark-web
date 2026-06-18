@@ -10,7 +10,7 @@ export const mockProducts: Product[] = [
     price: 1337,
     rating: 4.85,
     status: 'Simulation Product',
-    imageUrl: 'https://images.unsplash.com/photo-1601524909162-be87252be298?auto=format&fit=crop&q=80&w=400',
+    imageUrl: '/images/quantum_bio_transceiver.jpg',
     specs: [
       'Sub-dermal proximity emitter (simulated)',
       '1024-bit physical layer asymmetric encryption',
@@ -215,6 +215,396 @@ export const mockProducts: Product[] = [
         date: '2026-06-02'
       }
     ]
+  },
+  {
+    id: 'sim-1',
+    name: 'Phantom Access Terminal',
+    description: 'A high-performance simulated hardware console designed for secure, localized network administration.',
+    details: 'This terminal simulator replicates the operating environment of a hardened secure terminal. Features an integrated mechanical deck, simulated quantum-resistant security module, and multi-layered hardware isolation simulation.',
+    category: 'technology',
+    price: 2499,
+    rating: 4.91,
+    status: 'Simulation Item',
+    specs: [
+      'Integrated 60% mechanical deck with customized tactical keys',
+      '10-inch secure low-emission amber displays',
+      'Simulated hardware TRNG for access sessions',
+      'Dual physical isolation switch simulators'
+    ],
+    reviews: [
+      {
+        id: 'rev-s1-1',
+        author: 'Specter_Gate',
+        rating: 5,
+        comment: 'Phenomenal interface representation. The mechanical terminal style feels incredibly real.',
+        date: '2026-06-12'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-2',
+    name: 'Shadow Network Analyzer',
+    description: 'An educational diagnostic module that simulates packet tracing and sniffing metrics.',
+    details: 'Replicates cybersecurity diagnostics for air-tight environment monitoring. Displays interactive mock signal analysis and packet sequence inspection charts to introduce network interception mechanics safely.',
+    category: 'digital',
+    price: 899,
+    rating: 4.76,
+    status: 'Simulation Item',
+    specs: [
+      'Simulated passive network interface taps',
+      'Dynamic packet header telemetry simulator',
+      'LED waveform signal visualizer',
+      'Sub-frequency channel logging demonstrations'
+    ],
+    reviews: [
+      {
+        id: 'rev-s2-1',
+        author: 'PacketSniffer_X',
+        rating: 5,
+        comment: 'Excellent visual representation of packet streams and sniffing indicators.',
+        date: '2026-06-15'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-3',
+    name: 'Quantum Encryption Device',
+    description: 'A simulated hardware cryptographic accelerator with quantum-key simulation logic.',
+    details: 'Simulates high-speed mathematical operations representing quantum cryptography. Educational scripts detail how modular lattices protect telemetry from future quantum supercomputers.',
+    category: 'technology',
+    price: 1799,
+    rating: 4.95,
+    status: 'Simulation Item',
+    specs: [
+      'Lattice-based cryptography simulation algorithms',
+      'Real-time key exchange mock telemetry',
+      'OLED active key status display',
+      'Dynamic entropy generator verification tools'
+    ],
+    reviews: [
+      {
+        id: 'rev-s3-1',
+        author: 'QuantumZero',
+        rating: 5,
+        comment: 'Sleek presentation of lattice cryptography concepts. Highly recommend!',
+        date: '2026-06-14'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-4',
+    name: 'Ghost Signal Router',
+    description: 'A hardware router mockup that highlights dynamic proxying, VPN routing, and signal masking.',
+    details: 'This model showcases layered multi-hop routing techniques. It simulates local proxy chain configurations and highlights how digital telemetry gets stripped across nested node hops.',
+    category: 'technology',
+    price: 649,
+    rating: 4.68,
+    status: 'Simulation Item',
+    specs: [
+      'Nested multi-hop proxy routing simulations',
+      'MAC address spoofing automation simulator',
+      'Passive heatsink design for dark deployments',
+      'Visualized pathing node logs'
+    ],
+    reviews: [
+      {
+        id: 'rev-s4-1',
+        author: 'ProxyChains_Fan',
+        rating: 4,
+        comment: 'Perfect simulation for explaining multi-node packet hops.',
+        date: '2026-06-11'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-5',
+    name: 'CyberVault Secure Storage Unit',
+    description: 'A sturdy, smart electromagnetic secure locker simulation focusing on physical bypass drills.',
+    details: 'Shows dual-layer security concepts for home storage protection. Features simulation models for thermal vault protection, anti-tampering acoustic sensors, and electromagnetic deadbolts.',
+    category: 'household',
+    price: 1299,
+    rating: 4.88,
+    status: 'Simulation Item',
+    specs: [
+      'Physical electromagnetic bypass alert systems',
+      'Simulated biometric deadbolt locks',
+      'Acoustic tamper sensor triggers',
+      'Emergency recovery key-generation dashboard'
+    ],
+    reviews: [
+      {
+        id: 'rev-s5-1',
+        author: 'VaultCracker',
+        rating: 5,
+        comment: 'Stunning industrial design! Safe tamper tests are brilliant.',
+        date: '2026-06-03'
+      }
+    ],
+    imageUrl: '/images/cybervault_secure_storage.jpg'
+  },
+  {
+    id: 'sim-6',
+    name: 'DarkNode Communication Hub',
+    description: 'A multi-channel mock radio terminal demonstrating peer-to-peer encrypted chat protocols.',
+    details: 'Constructed to demonstrate emergency offline communications. It simulates direct radio meshes using frequency hopping and packetized data streams over unlicensed bands.',
+    category: 'technology',
+    price: 749,
+    rating: 4.79,
+    status: 'Simulation Item',
+    specs: [
+      'Peer-to-peer chat logs simulation template',
+      '915 MHz spread spectrum emulation logic',
+      'Integrated status display for offline network state',
+      'Emergency power backup simulation metrics'
+    ],
+    reviews: [
+      {
+        id: 'rev-s6-1',
+        author: 'RadioOffgrid',
+        rating: 4,
+        comment: 'Very nice offline transport layer simulation. Interactive meshes look great.',
+        date: '2026-06-13'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-7',
+    name: 'Specter Data Archive',
+    description: 'A simulated high-capacity cold-storage backup array with automated zero-knowledge partitioning.',
+    details: 'This visual simulation represents a high-density, heavily isolated backup array. Teaches concepts of sharding, metadata stripping, and background verification cascades.',
+    category: 'digital',
+    price: 2099,
+    rating: 4.93,
+    status: 'Simulation Item',
+    specs: [
+      'Metadata scrubbing automation configurations',
+      'Simulated RAID-Z zero-knowledge sharding maps',
+      'Write-Once-Read-Many (WORM) hardware simulator',
+      'Encrypted file extraction simulator'
+    ],
+    reviews: [
+      {
+        id: 'rev-s7-1',
+        author: 'ColdStorage_Pro',
+        rating: 5,
+        comment: 'Sharding visualizer teaches raid structures so easily!',
+        date: '2026-06-10'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-8',
+    name: 'Neon Security Console',
+    description: 'A tactile control interface designed for monitoring firewall anomalies and honeypot triggers.',
+    details: 'A sleek mock console engineered to demonstrate defense orchestration. Gives security engineers interactive knobs and sliders (simulated) to adjust network bypass routing and filtering rules.',
+    category: 'technology',
+    price: 999,
+    rating: 4.82,
+    status: 'Simulation Item',
+    specs: [
+      'Firewall threshold sliders (simulation variables)',
+      'Tactile mechanical emergency power button',
+      'Compact rackmount layout',
+      'RGB indicator matrix for honeypot alarms'
+    ],
+    reviews: [
+      {
+        id: 'rev-s8-1',
+        author: 'HoneypotCapt',
+        rating: 5,
+        comment: 'Looks amazing on my workspace display. Excellent visual triggers.',
+        date: '2026-06-16'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-9',
+    name: 'Eclipse Privacy Workstation',
+    description: 'An ultra-low-emission custom desktop workstation simulation for air-gapped operations.',
+    details: 'Represents a high-end hardware testing workstation completely protected from electromagnetic footprint analysis. Includes simulation data of cooling, air filtration, and secure BIOS structures.',
+    category: 'technology',
+    price: 3499,
+    rating: 4.98,
+    status: 'Simulation Item',
+    specs: [
+      'Faraday cage structural isolation casing',
+      'Custom open-source coreboot BIOS emulator logs',
+      'Fiber-optic interface card configuration list',
+      'Simulated electromagnetic emission spectrum mapping'
+    ],
+    reviews: [
+      {
+        id: 'rev-s9-1',
+        author: 'AirGap_Enthusiast',
+        rating: 5,
+        comment: 'The BIOS and faraday emissions spectrum simulator charts are stunning.',
+        date: '2026-06-17'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-10',
+    name: 'BlackGrid Operations Center',
+    description: 'A full visual security center package including active node maps and intrusion response dashboards.',
+    details: 'A sophisticated simulation suite mimicking a multi-monitor corporate security operations center. Displays interactive telemetry flows, alerts, maps, and automated containment scenarios.',
+    category: 'digital',
+    price: 4999,
+    rating: 4.92,
+    status: 'Simulation Item',
+    specs: [
+      'Multiple security screen visualization feeds',
+      'Global threat map mapping (simulated packets)',
+      'Interactive containment scripting triggers',
+      'Automated containment logging modules'
+    ],
+    reviews: [
+      {
+        id: 'rev-s10-1',
+        author: 'SOC_Lead_Delta',
+        rating: 5,
+        comment: 'By far the best layout for teaching cyber crisis command and response.',
+        date: '2026-06-08'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-11',
+    name: 'ZeroTrace Monitoring Hub',
+    description: 'A hardware controller and interface tracking network traversal footprints and secure logs.',
+    details: 'Helps cybersecurity students learn how operational security (OPSEC) audits are run. Generates simulated alerts when digital actions leak metadata such as local timestamps or geolocation details.',
+    category: 'digital',
+    price: 1899,
+    rating: 4.71,
+    status: 'Simulation Item',
+    specs: [
+      'OPSEC audit alert generator simulations',
+      'Metadata logging analysis tools',
+      'Automatic data purging simulation scripts',
+      'Hardware footprint telemetry visualizers'
+    ],
+    reviews: [
+      {
+        id: 'rev-s11-1',
+        author: 'OPSEC_Guru',
+        rating: 5,
+        comment: 'Extremely good educational reminder about metadata hygiene.',
+        date: '2026-06-15'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-12',
+    name: 'NightCipher Processing Unit',
+    description: 'A liquid-cooled cryptoprocessor template simulating fast modular multiplication and decryption blocks.',
+    details: 'Simulates extreme computing blocks used in asymmetric key cracking research. Includes interactive charts modeling hardware temperatures, clock speeds, and cryptographic search logs.',
+    category: 'technology',
+    price: 2299,
+    rating: 4.87,
+    status: 'Simulation Item',
+    specs: [
+      'Decrypted data block metrics simulator',
+      'Modular multiplication math engine models',
+      'Supercooled thermal simulation configurations',
+      'Hardware cracking search progress visualizers'
+    ],
+    reviews: [
+      {
+        id: 'rev-s12-1',
+        author: 'Asym_Cracker',
+        rating: 4,
+        comment: 'Thermally balanced processing models helper. Five stars!',
+        date: '2026-06-14'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-13',
+    name: 'Obsidian Secure Server',
+    description: 'A heavy-duty rack server model highlighting trusted execution environments and secure enclaves.',
+    details: 'Replicates enterprise-grade architectural defense. Demonstrates hardware enclaves (like SGX/SEV) that encrypt memory in transit, preventing direct physical memory reading attacks.',
+    category: 'technology',
+    price: 5499,
+    rating: 4.99,
+    status: 'Simulation Item',
+    specs: [
+      'Trusted Execution Environment (TEE) sandbox model',
+      'Encrypted runtime RAM allocation simulator',
+      'Glossy obsidian carbon isolation chassis',
+      'Hot-swappable cryptographic vault metrics'
+    ],
+    reviews: [
+      {
+        id: 'rev-s13-1',
+        author: 'Enclave_Dev',
+        rating: 5,
+        comment: 'Flawless demonstration of memory isolation vectors and cold boot protection.',
+        date: '2026-06-16'
+      }
+    ],
+    imageUrl: '/images/obsidian_secure_server.jpg'
+  },
+  {
+    id: 'sim-14',
+    name: 'Phantom Relay Station',
+    description: 'A tactical transmission relay antenna simulation with dynamic packet routing parameters.',
+    details: 'Engineered to display how secure remote relays operate in isolated terrains. Simulates telemetry link handshakes, packet forwarding protocols, and directional signal shielding.',
+    category: 'technology',
+    price: 1499,
+    rating: 4.65,
+    status: 'Simulation Item',
+    specs: [
+      'Tactical link handshake simulation variables',
+      'Automated failover route telemetry maps',
+      'Directional radio sector beamforming models',
+      'Solar micro-grid power configurations'
+    ],
+    reviews: [
+      {
+        id: 'rev-s14-1',
+        author: 'RF_Relay_Op',
+        rating: 5,
+        comment: 'The beamforming antenna diagram variables are exceptionally precise.',
+        date: '2026-06-02'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: 'sim-15',
+    name: 'Nexus Intelligence Console',
+    description: 'A futuristic unified control console designed for security architecture simulation feeds.',
+    details: 'Shows high-level unified interface models. Replicates deep threat analysis mapping, AI-guided response scenarios, and complex decryption orchestration panels.',
+    category: 'technology',
+    price: 2799,
+    rating: 4.89,
+    status: 'Simulation Item',
+    specs: [
+      'Unified security node network dashboards',
+      'Decryption algorithm timing analyzers',
+      'Modular sensor expansion ports simulated',
+      'Hardware key-vault cryptographic controllers'
+    ],
+    reviews: [
+      {
+        id: 'rev-s15-1',
+        author: 'Nexus_Commander',
+        rating: 5,
+        comment: 'Utterly perfect. Integrated seamlessly with my training dashboards.',
+        date: '2026-06-17'
+      }
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=400'
   }
 ];
 
